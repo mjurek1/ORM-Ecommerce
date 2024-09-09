@@ -21,6 +21,15 @@ ProductTag.init(
         key: 'id'
       },
       onDelete: 'cascade'
+    },
+    tag_id: {
+      type: DataTypes.INTEGER,
+      allowNull:false,
+      references: {
+        model: 'tag',
+        key: 'id'
+      },
+      onDelete: 'cascade'
     }
   },
   {
